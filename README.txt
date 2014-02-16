@@ -1,6 +1,6 @@
 LightIRCClient is a graphical lightweight cross platform IRC Client based on the PIRC API.
 
-===============================================INSTALLATION============================================================
+   ========================================INSTALLATION================================
 
 1. Download the Jibble pIRC API from http://www.jibble.org/pircbot.php
 
