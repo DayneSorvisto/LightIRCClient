@@ -1,4 +1,4 @@
-LightIRCClient is a graphical lightweight cross platform IRC Client based on the PIRC API.
+LightIRCClient is a graphical lightweight cross platform IRC Client based on the pIRC API.
 
    ==================================INSTALLATION================================
 
