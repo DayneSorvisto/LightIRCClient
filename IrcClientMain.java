@@ -1,4 +1,3 @@
-
 /**
  * Lightweight IRC Client based on PIRC API Copyright (C) 2014 Author Dayne
  * Sorvisto
@@ -27,7 +26,7 @@ import javax.swing.JTextField;
 
 public class IrcClientMain {
 
-    public static ChatApp gui = new ChatApp();
+    private static ChatApp gui = new ChatApp();
 
     public static void main(String[] args) throws Exception {
 
