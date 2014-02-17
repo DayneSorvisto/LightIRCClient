@@ -27,13 +27,13 @@ import java.util.*;
 /** This is our GUI class */
 public class ChatApp implements ActionListener {
 
-    public JTextArea textArea;
+    private JTextArea textArea;
 
     private JTextField textData;
 
-    public JFrame frame;
+    private JFrame frame;
 
-    public IrcBot bot;
+    private IrcBot bot;
 
     public ChatApp() {
 
