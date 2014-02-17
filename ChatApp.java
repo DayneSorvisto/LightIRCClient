@@ -45,7 +45,7 @@ public class ChatApp implements ActionListener {
 
         textData.addActionListener(this);
 
-        frame = new JFrame("Edge IRC Client");
+        frame = new JFrame("LightIRC Client"); //Set name of IRC Client
 
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
