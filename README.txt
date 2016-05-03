@@ -8,6 +8,12 @@ LightIRCClient is a graphical lightweight cross platform IRC Client based on the
 
 3. Enter java -cp pircbot.jar:. IrcCLientMain to launch LightIRCClient
 
+The default IRC node is: irc.freenode.org and the default channel is #Test. If you wish to use different ones, please pass:
+
+"-serverName <the desired IRC server>" and "-channel <the desired channel>"(without the quotes).
+
+in the command above, in step 3.
+
 Basic Functions: 
 
 /join #channel to join channel

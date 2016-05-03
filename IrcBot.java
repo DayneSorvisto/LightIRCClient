@@ -1,5 +1,7 @@
 /**
- * Lightweight IRC Client based on PIRC API   * Copyright (C) 2014 Author  * Dayne Sorvisto
+ * Lightweight IRC Client based on PIRC API
+ * Copyright (C) 2014 Author
+ * Dayne Sorvisto
  */
 
 import org.jibble.pircbot.PircBot;
@@ -29,7 +31,7 @@ public class IrcBot extends PircBot {
 
     /** This method receives the message string received from the IRC server and
      * parses various IRC commands according to RFC specification
-     * */
+     */
     public boolean commands(String msg) {
         if (msg.startsWith("/join")) {
             msg = msg.replaceAll("/join", "");
@@ -71,7 +73,8 @@ public class IrcBot extends PircBot {
         }
     }
 
-    /**      * Receives a message from the server and passes it to the GUI      */
+    /** Receives a message from the server and passes it to the GUI
+    */
     @Override
     public void onMessage(String channel, String sender, String login, String hostname, String message) {
         gui.appendMessage(sender + ": " + message);

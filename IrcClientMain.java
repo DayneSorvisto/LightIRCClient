@@ -1,5 +1,7 @@
 /**
- * Lightweight IRC Client based on PIRC API Copyright (C) 2014 Author Dayne  * Sorvisto
+ * Lightweight IRC Client based on PIRC API
+ * Copyright (C) 2014
+ * Author Dayne Sorvisto
  */
 
 import java.awt.*;

@@ -1,5 +1,4 @@
 import org.jibble.pircbot.*;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
