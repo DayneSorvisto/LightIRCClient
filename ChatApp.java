@@ -1,24 +1,19 @@
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.EventQueue;
+import org.jibble.pircbot.*;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JFrame;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.*;
-import javax.swing.event.*;
-import org.jibble.pircbot.*;
-import java.util.*;
-/** This is our GUI class */ public class ChatApp implements ActionListener
-{
+
+/**
+ * This is our GUI class
+ */
+public class ChatApp implements ActionListener {
     private JTextArea textArea;
     private JTextField textData;
     private JFrame frame;
     private IrcBot bot;
-    public ChatApp()
-    {
+
+    public ChatApp() {
         textArea = new JTextArea();
         textArea.setEditable(false);
         textData = new JTextField();
@@ -38,11 +33,10 @@ import java.util.*;
     public void actionPerformed(ActionEvent e)
     {
         String data = textData.getText() + "\n";
-        textArea.append(bot.nick + " " + data);
+        textArea.append(bot.getNick() + " " + data);
         textData.setText("");
-        if (!bot.commands(data))
-        {
-            bot.sendMessage(bot.current, data);
+        if (!bot.commands(data)) {
+            bot.sendMessage(bot.getNick(), data);
         }
     }
     public void listUsers(User array[])
